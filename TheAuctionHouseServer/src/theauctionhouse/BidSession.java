@@ -20,7 +20,7 @@ public class BidSession {
         BiddersList = biddersList;
     }
 
-    private Transaction endSession(){
+    private Transaction endSession() {
 
     }
 
