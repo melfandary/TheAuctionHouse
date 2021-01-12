@@ -7,7 +7,7 @@ package theauctionhouse;
 
 /**
  *
- * @author mama
+ * @author daddy
  */
 public interface payMethod {
     public void pay(int amount, String sender, String reciever);

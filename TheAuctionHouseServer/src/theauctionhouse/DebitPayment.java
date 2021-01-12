@@ -7,7 +7,7 @@ package theauctionhouse;
 
 /**
  *
- * @author ur mama
+ * @author ur daddy
  */
 public class DebitPayment implements payMethod {
 
