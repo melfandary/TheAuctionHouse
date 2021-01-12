@@ -1,8 +1,11 @@
 package theauctionhouse;
 
-public class Seller extends User{
+import java.util.ArrayList;
+
+public class Seller extends User {
+
     private float balance;
-    private  ArrayList<Product> postedProducts ;
+    private ArrayList<Product> postedProducts;
 
     public Seller(float balance, ArrayList postedProducts) {
         this.balance = balance;
