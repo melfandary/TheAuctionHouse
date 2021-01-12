@@ -9,10 +9,10 @@ public class BidSession {
     private BiddingRoom BidRoom;
     private Seller seller;
     private Product biddingProd;
-    private ArrayList BiddersList;
+    private ArrayList<Bidder> BiddersList;
 
 
-    public BidSession(Bidder highestBidder, BiddingRoom bidRoom, Seller seller, Product biddingProd, ArrayList biddersList) {
+    public BidSession(Bidder highestBidder, BiddingRoom bidRoom, Seller seller, Product biddingProd, ArrayList<Bidder> biddersList) {
         this.highestBidder = highestBidder;
         BidRoom = bidRoom;
         this.seller = seller;
