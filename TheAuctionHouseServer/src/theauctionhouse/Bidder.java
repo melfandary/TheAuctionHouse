@@ -30,6 +30,10 @@ class Bidder extends User {
     public void setBalance(int balance) {
         this.balance = balance;
     }
+
+    public void bid(int bidprice, BidSession bs){}
+    public void regToRoom(BidSession bs){}
+    public void viewProductList(){}
     
     
 }
