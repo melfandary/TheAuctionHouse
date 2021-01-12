@@ -104,9 +104,9 @@ public class User {
     }
     public boolean login (String name,String pass){
         if (name == this.Uname&&pass==this.Upass){
-            return true
+            return true;
         }
-        else return false
+        else return false;
     }
 
 
