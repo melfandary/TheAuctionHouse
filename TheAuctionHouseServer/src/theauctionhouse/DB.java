@@ -24,7 +24,8 @@ public class DB {
 
     public DB() {
         // Disable Mongo Logs
-        Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
+
+        Logger mongoLogger = Logger.getLogger("org.mongodb.driver");// removes extra warnings
         mongoLogger.setLevel(Level.SEVERE);
 
         // Initialize database
