@@ -37,7 +37,7 @@ public class DB {
         collection = database.getCollection("Seller");
 
         collection.insertOne(Document.parse(gson.toJson(s)));
-        System.out.println("Account inserted.");
+        System.out.println("Seller inserted");
     }
 
 }

@@ -12,7 +12,7 @@ public class TheAuctionHouse {
 
         Seller s =new Seller(10);
         DB database = new DB();
-        database.insertStudent(s);
+        database.insertSeller(s);
 
     }
     
