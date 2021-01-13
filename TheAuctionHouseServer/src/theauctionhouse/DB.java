@@ -1,8 +1,8 @@
 package theauctionhouse;
 
-
 import com.google.gson.Gson;
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
@@ -17,10 +17,10 @@ import org.bson.Document;
 public class DB {
 
 
-    private MongoClient db;
-    private MongoDatabase database;
-    private MongoCollection<Document> collection;
-    private Gson gson = new Gson();
+    MongoClient mongoClient;
+    MongoDatabase database;
+    MongoCollection<Document> collection;
+    Gson gson = new Gson();
 
     public DB() {
         // Disable Mongo Logs
@@ -28,8 +28,10 @@ public class DB {
         mongoLogger.setLevel(Level.SEVERE);
 
         // Initialize database
-        db = new MongoClient();//"mongodb+srv://Prince:wasdWASD@cluster0.19key.mongodb.net/TheAuctionHouse?retryWrites=true&w=majority"
-        database = db.getDatabase("TheAuctionHouse");
+        String connectionString = "mongodb+srv://Prince:wasdWASD@cluster0.19key.mongodb.net/TheAuctionHouse?retryWrites=true&w=majority";
+        mongoClient = new MongoClient(new MongoClientURI(connectionString));
+
+        database = mongoClient.getDatabase("TheAuctionHouse");
 //     for every function:    collection = database.getCollection("USER");  Collection name
     }
 
