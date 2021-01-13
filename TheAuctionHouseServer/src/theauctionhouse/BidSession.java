@@ -21,7 +21,7 @@ public class BidSession {
     }
 
     private Transaction endSession() {
-
+        return null;
     }
 
 
